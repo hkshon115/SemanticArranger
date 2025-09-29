@@ -1,0 +1,10 @@
+# This file allows for toggling experimental or optional features in the pipeline
+# without changing the code. It's a safe way to roll out or test new functionality.
+
+enable_new_summarizer:
+  # Whether the feature is globally enabled or disabled.
+  enabled: false
+  
+  # (Optional) A percentage for gradual rollout. If set, the feature will be
+  # enabled for this percentage of inputs, based on a hash of an identifier.
+  percentage: 10 # Example of a feature that is off

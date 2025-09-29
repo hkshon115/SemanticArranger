@@ -1,0 +1,45 @@
+# This file defines all Large Language Models (LLMs) used in the pipeline.
+# It allows for easy management of models, providers, and fallback strategies.
+
+# Default models for each major task in the pipeline.
+router_model: "gemini-2.5-flash"
+extraction_primary_model: "gemini-2.5-flash"
+extraction_secondary_model: "gemini-2.5-flash"
+extraction_tertiary_model: "gemini-2.5-flash"
+extraction_fallback_model: "gemini-2.5-flash"
+summarization_model: "gemini-2.5-flash"
+
+# A dictionary of all available models and their configurations.
+models:
+  "gpt-4.1":
+    name: "gpt-4.1"
+    token_limit: 32768
+    provider: "openai"
+  "gpt-5-mini":
+    name: "gpt-5-mini"
+    token_limit: 32768
+    provider: "openai"
+  "claude-opus-4":
+    name: "claude-opus-4"
+    token_limit: 32000
+    provider: "anthropic"
+  "claude-opus-4-1":
+    name: "claude-opus-4-1"
+    token_limit: 32000
+    provider: "anthropic"
+  "gemini-2.5-pro":
+    name: "gemini-2.5-pro"
+    token_limit: 64000
+    provider: "google"
+  "gemini-2.5-flash":
+    name: "gemini-2.5-flash"
+    token_limit: 64000
+    provider: "google"
+
+# Defines the fallback chains for the router. If the primary model fails,
+# the system will try the models in the list in order.
+router_fallback_chains:
+  "claude-opus-4-1": ["claude-opus-4", "gemini-2.5-pro", "gpt-4.1"]
+  "gemini-2.5-pro": ["gemini-2.5-flash", "gpt-4.1", "gpt-5-mini"]
+  "gpt-4.1": ["gemini-2.5-pro", "gpt-5-mini", "gemini-2.5-flash"]
+  "gemini-2.5-flash": ["gemini-2.5-flash", "gemini-2.5-flash", "gemini-2.5-flash"]

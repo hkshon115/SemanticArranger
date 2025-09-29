@@ -1,0 +1,38 @@
+{
+  "executive_summary": "This single-page document, titled \"Hello Word,\" provides a concise financial overview for the year 2024. Its primary purpose is to present key financial performance indicators, specifically quarterly revenue and profit figures, in a clear and accessible table format.\n\nThe document's brevity and structured presentation facilitate quick comprehension of the company's financial health across the four quarters of 2024. It serves as an immediate snapshot for stakeholders seeking to understand the company's financial performance during the specified period.",
+  "key_takeaways": [
+    {
+      "point": "The document provides a financial overview for the year 2024.",
+      "importance": "high"
+    },
+    {
+      "point": "It details quarterly revenue figures for 2024.",
+      "importance": "high"
+    },
+    {
+      "point": "It details quarterly profit figures for 2024.",
+      "importance": "high"
+    },
+    {
+      "point": "Financial data is presented in a clear table format.",
+      "importance": "medium"
+    },
+    {
+      "point": "The document is concise, spanning only one page.",
+      "importance": "medium"
+    },
+    {
+      "point": "Designed for quick assessment of financial performance.",
+      "importance": "medium"
+    }
+  ],
+  "document_metadata": {
+    "document_type": "Financial Summary",
+    "primary_subject": "Quarterly Financial Performance"
+  },
+  "metadata": {
+    "generated_at": "2025-09-29T22:22:26.243114",
+    "model_used": "gemini-2.5-flash",
+    "language": "en"
+  }
+}

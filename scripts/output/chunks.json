@@ -1,0 +1,19 @@
+[
+  {
+    "page_content": "# Hello Word\n\n---\n\n## Summary\nThis page displays quarterly revenue and profit figures for 2024, providing a concise financial overview presented in a clear table format.\n\n---\n\n### Content\nHello Word\n2024 Q1 Q2 Q3 Q4\nRevenue 300 400 500 600\nProfit 100 120 140 160",
+    "metadata": {
+      "page_number": 1,
+      "page_title": "Hello Word",
+      "page_summary": "This page displays quarterly revenue and profit figures for 2024, providing a concise financial overview presented in a clear table format.",
+      "page_complexity": "simple",
+      "language": "en",
+      "chunking_profile": "standard",
+      "chunked_at": "2025-09-29T22:22:21.295876",
+      "is_full_page": true,
+      "chunk_index": 0,
+      "total_chunks": 1,
+      "estimated_tokens": 70
+    },
+    "embedding_id": "aac8936cb3afdfc7cdb5736388ca7da7"
+  }
+]
