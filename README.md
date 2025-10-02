@@ -11,10 +11,6 @@
   [![Code Coverage](https://img.shields.io/badge/coverage-85%25+-green.svg)](tests/)
   [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
   
-  [**Documentation**](docs/) • 
-  [**Architecture**](backend/README.md) • 
-  [**Report Bug**](https://github.com/username/repo/issues) • 
-  [**Request Feature**](https://github.com/username/repo/issues)
 </div>
 
 ---
@@ -59,24 +55,90 @@
   </tr>
 </table>
 
+## 📄 Academic Publication
+
+**Based on academic peer-reviewed research from Hyundai Motor Company & Seoul National University of Science and Technology**
+
+
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <h4>📄 English Paper</h4>
+      <p><strong>"Enhanced Retrieval and Generation Performance via Multimodal LLM-based Serialization of Tabular and Chart Data"</strong></p>
+      <p><em>Hyun Kyu Shon¹, Changmook Kang², Hanul Kim³</em><br>
+      ¹Hyundai Motor Company<br>
+      ²Hanyang University<br>
+      ³Seoul National University of Science and Technology</p>
+      <p><a href="assets/25AKSAE_J089_en.pdf">📖 Read Full Paper (PDF)</a></p>
+    </td>
+    <td width="50%" align="center">
+      <h4>📄 한글 논문</h4>
+      <p><strong>"멀티모달 LLM기반 표/차트 데이터 직렬화를 이용한 검색/생성 능력 개선"</strong></p>
+      <p><em>손현규¹, 강창목², 김한울³</em><br>
+      ¹현대자동차<br>
+      ²한양대학교 전기공학과<br>
+      ³서울과학기술대학교 인공지능응용학과</p>
+      <p><a href="assets/25AKSAE_J089_ko.pdf">📖 전체 논문 보기 (PDF)</a></p>
+    </td>
+  </tr>
+</table>
+
 ## ✨ Demo: From Chaos to Clarity
 
 Here’s a glimpse of how the pipeline transforms a complex document page into structured, machine-readable JSON.
 
-<table style="width: 100%; border-collapse: collapse;">
-  <tr>
-    <td style="width: 50%; align: center; vertical-align: top;">
-      <strong>📄 Original Document Page</strong>
-      <br>
-      <img src="assets/CEO_data_point_p4.png" alt="Sample PDF Page" style="width: 90%; height: auto;">
-      <br>
-      <small>Source: <a href="https://media-publications.bcg.com/CEO-data-point-2025.pdf">BCG CEO Data Point 2025, Page 3</a></small>
-    </td>
-    <td style="width: 50%">
-      <div style="height: 100%; display: flex; flex-direction: column;">        
-        <strong>Structured JSON Output</strong>
-        <div style="max-height: 1000px; overflow-y: auto; border: 1px solid #ddd; border-radius: 4px">
-          <pre><code class="language-json">
+### 📄 Original Document Page
+
+![Sample PDF Page](assets/CEO_data_point_p4.PNG)
+
+<small>Source: [BCG CEO Data Point 2025, Page 3](https://media-publications.bcg.com/CEO-data-point-2025.pdf)</small>
+
+---
+
+### Structured JSON Output
+**This section gives a quick look at JSON output from the pipeline.**
+```json
+{
+  "element_type": "Comparative bubble chart",
+      "title": "North America Sees Biggest Rise in “Wait and See” Stance",
+      "key_takeaway": "Between Q1 and Q2 2025, North American companies showed the strongest inclination towards a 'wait and see' strategy, with a 185% surge in mentions of 'Pausing' decisions. In contrast, Asia-Pacific companies are actively considering supply chain shifts, indicated by a massive 556% increase in 'Reshoring' mentions and a 20% decrease in 'Pausing', suggesting a more decisive response to tariff pressures in that region.",
+      "details": {
+        "subtitle": "% change in mentions on earnings calls (Q1 to Q2 2025)",
+        "legend_items": [
+          "Reshoring",
+          "Pausing",
+          "Manufacturing footprint",
+          "Monitoring",
+          "Price increases"
+        ],
+        "data": [
+          {
+            "region": "North America",
+            "values": {
+              "Pausing": "+185%",
+              "Manufacturing footprint": "+84%",
+              "Monitoring": "+41%",
+              "Price increases": "+40%"
+            }
+          },
+          {
+            "region": "Europe, Middle East, South America, Africa",
+            "values": {
+              "Reshoring": "+93%",
+              "Pausing": "+23%",
+              "Manufacturing footprint": "+43%",
+              "Monitoring": "+20%",
+              "Price increases": "+23%"
+            }
+          },
+    ]}
+  // ... more fields ...
+}
+```
+<details>
+<summary>Click to view the full JSON output</summary>
+
+```json
 {
   "page_complexity": "moderate",
   "extraction_method": "smart_routing",
@@ -233,12 +295,10 @@ Here’s a glimpse of how the pipeline transforms a complex document page into s
         "notes": "Notes: Based on earnings calls from 4,748 global companies; Q2 2025 contains April–May 2025 data. A “pause” means temporarily delaying key business decisions to assess the impact of tariffs."
       }
     }
-          </code></pre>
-        </div>
-      </div>
-    </td>
-  </tr>
-</table>
+  ]
+}
+```
+</details>
 
 ## 🚀 Quick Start
 
