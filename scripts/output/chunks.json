@@ -1,19 +1,19 @@
 [
   {
-    "page_content": "# Hello Word\n\n---\n\n## Summary\nThis page displays quarterly revenue and profit figures for 2024, providing a concise financial overview presented in a clear table format.\n\n---\n\n### Content\nHello Word\n2024 Q1 Q2 Q3 Q4\nRevenue 300 400 500 600\nProfit 100 120 140 160",
+    "page_content": "# Hello Word\n\n---\n\n## Summary\nThis document contains a simple header 'Hello Word' and a quarterly financial table for 2024 showing Revenue and Profit figures across all four quarters. The financial data shows progressive growth in both revenue (from 300 to 600) and profit (from 100 to 160) throughout the year.\n\n---\n\n### 2024 Quarterly Financial Data\n2024 | Q1 | Q2 | Q3 | Q4\nRevenue | 300 | 400 | 500 | 600\nProfit | 100 | 120 | 140 | 160",
     "metadata": {
       "page_number": 1,
       "page_title": "Hello Word",
-      "page_summary": "This page displays quarterly revenue and profit figures for 2024, providing a concise financial overview presented in a clear table format.",
+      "page_summary": "This document contains a simple header 'Hello Word' and a quarterly financial table for 2024 showing Revenue and Profit figures across all four quarters. The financial data shows progressive growth in both revenue (from 300 to 600) and profit (from 100 to 160) throughout the year.",
       "page_complexity": "simple",
       "language": "en",
-      "chunking_profile": "standard",
-      "chunked_at": "2025-09-29T22:22:21.295876",
+      "chunking_profile": "simple",
+      "chunked_at": "2025-11-08T08:01:57.323458",
       "is_full_page": true,
       "chunk_index": 0,
       "total_chunks": 1,
-      "estimated_tokens": 70
+      "estimated_tokens": 119
     },
-    "embedding_id": "aac8936cb3afdfc7cdb5736388ca7da7"
+    "embedding_id": "bbdb123f6f1597e876b08aedcf804946"
   }
 ]

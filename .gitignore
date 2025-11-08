@@ -1,0 +1,10 @@
+# Python environment files
+.env
+
+# Compiled Python files
+__pycache__/
+*.pyc
+
+# OS generated files
+.DS_Store
+Thumbs.db

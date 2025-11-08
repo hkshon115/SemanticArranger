@@ -306,7 +306,6 @@ Here’s a glimpse of how the pipeline transforms a complex document page into s
 
 - Python 3.11+
 - LLM API Key (OpenAI, Claude, Gemini or even your local LLM)
-  *pipeline has been optimized for the latest Gemini models
 
 ### Installation
 

@@ -51,6 +51,6 @@ class PipelineConfig(BaseModel):
     retry_backoff_base: float = 2.0
     fallback_to_raw_text: bool = True
     key_lang: str = "en"
-    extraction_primary_model: str = "gemini-2.5-flash"
-    summarization_model: str = "gemini-2.5-flash"
+    extraction_primary_model: str = "claude-sonnet-4-5"
+    summarization_model: str = "claude-sonnet-4-5"
     iterative_refinement_enabled: bool = False

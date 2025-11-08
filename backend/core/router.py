@@ -142,8 +142,8 @@ class AsyncRouter(IAsyncRouter):
                 page_complexity=data.get('page_complexity', 'moderate'),
                 has_dense_table=data.get('content_analysis', {}).get('has_dense_table', False),
                 table_info=data.get('content_analysis', {}).get('table_info'),
-                text_sections=data.get('content_analysis', {}).get('text_sections', 0),
-                visual_elements=data.get('content_analysis', {}).get('visual_elements', 0),
+                text_sections=data.get('content_analysis', {}).get('text_sections', {}),
+                visual_elements=data.get('content_analysis', {}).get('visual_elements', {}),
                 extraction_plans=[ExtractionPlan(**p) for p in data.get('extraction_plans', [])],
                 total_estimated_tokens=data.get('total_estimated_tokens', 10000),
                 warnings=data.get('warnings', [])
@@ -161,8 +161,8 @@ class AsyncRouter(IAsyncRouter):
             page_complexity="unknown",
             has_dense_table=False,
             table_info=None,
-            text_sections=0,
-            visual_elements=0,
+            text_sections={},
+            visual_elements={},
             extraction_plans=[
                 ExtractionPlan(
                     step=1,

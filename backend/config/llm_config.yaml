@@ -2,12 +2,12 @@
 # It allows for easy management of models, providers, and fallback strategies.
 
 # Default models for each major task in the pipeline.
-router_model: "gemini-2.5-flash"
-extraction_primary_model: "gemini-2.5-flash"
-extraction_secondary_model: "gemini-2.5-flash"
-extraction_tertiary_model: "gemini-2.5-flash"
-extraction_fallback_model: "gemini-2.5-flash"
-summarization_model: "gemini-2.5-flash"
+router_model: "claude-sonnet-4-5"
+extraction_primary_model: "claude-sonnet-4-5"
+extraction_secondary_model: "claude-sonnet-4-5"
+extraction_tertiary_model: "claude-sonnet-4-5"
+extraction_fallback_model: "claude-sonnet-4-5"
+summarization_model: "claude-sonnet-4-5"
 
 # A dictionary of all available models and their configurations.
 models:
@@ -19,6 +19,10 @@ models:
     name: "gpt-5-mini"
     token_limit: 32768
     provider: "openai"
+  "claude-sonnet-4":
+    name: "claude-sonnet-4-5"
+    token_limit: 32000
+    provider: "anthropic"    
   "claude-opus-4":
     name: "claude-opus-4"
     token_limit: 32000

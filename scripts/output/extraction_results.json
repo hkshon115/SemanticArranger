@@ -2,78 +2,36 @@
   {
     "page_complexity": "simple",
     "extraction_method": "smart_routing",
-    "total_steps": 2,
-    "successful_steps": 2,
+    "total_steps": 1,
+    "successful_steps": 1,
     "main_title": "Hello Word",
-    "page_summary": "This page displays quarterly revenue and profit figures for 2024, providing a concise financial overview presented in a clear table format.",
+    "page_summary": "This document contains a simple header 'Hello Word' and a quarterly financial table for 2024 showing Revenue and Profit figures across all four quarters. The financial data shows progressive growth in both revenue (from 300 to 600) and profit (from 100 to 160) throughout the year.",
     "key_sections": [
       {
-        "section_title": "Content",
-        "content": "Hello Word\n2024 Q1 Q2 Q3 Q4\nRevenue 300 400 500 600\nProfit 100 120 140 160",
-        "section_id": "910b13b715d2d2d73296f9b4e4587409"
+        "section_title": "2024 Quarterly Financial Data",
+        "content": "2024 | Q1 | Q2 | Q3 | Q4\nRevenue | 300 | 400 | 500 | 600\nProfit | 100 | 120 | 140 | 160",
+        "section_id": "da6c47eba5abea53a3cc4b25c4512884"
       }
     ],
     "visual_elements": [],
-    "tables": [
-      {
-        "title": null,
-        "headers": [
-          "2024",
-          "Q1",
-          "Q2",
-          "Q3",
-          "Q4"
-        ],
-        "rows": [
-          [
-            "Revenue",
-            "300",
-            "400",
-            "500",
-            "600"
-          ],
-          [
-            "Profit",
-            "100",
-            "120",
-            "140",
-            "160"
-          ]
-        ],
-        "metadata": {
-          "total_rows": 2,
-          "total_columns": 5,
-          "has_merged_cells": false,
-          "notes": null
-        }
-      }
-    ],
+    "tables": [],
     "metadata": {
       "page_number": 1,
       "router_warnings": [],
       "total_tokens_used": 0,
-      "total_time": 9.388261556625366,
+      "total_time": 5.6331634521484375,
       "extraction_details": [
         {
           "step": 1,
-          "strategy": "minimal",
+          "strategy": "basic",
           "success": true,
           "tokens_used": 0,
-          "time_elapsed": 4.959074258804321,
-          "error": null
-        },
-        {
-          "step": 2,
-          "strategy": "table_focus",
-          "success": true,
-          "tokens_used": 0,
-          "time_elapsed": 4.429187297821045,
+          "time_elapsed": 5.6331634521484375,
           "error": null
         }
       ],
       "extraction_strategies_used": [
-        "table_focus",
-        "minimal"
+        "basic"
       ],
       "processing_errors": [],
       "uses_anti_recitation": false

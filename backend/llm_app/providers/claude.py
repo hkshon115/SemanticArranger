@@ -19,7 +19,7 @@ def _convert_to_claude_parts(content: list) -> list:
     claude_parts =[]
     for item in content:
         if item.get("type")== "text":
-            claude_parts.append({"text": item.get("text","")})
+            claude_parts.append({"type": "text", "text": item.get("text","")})
         elif item.get("type")=="image" and "source" in item:
             source = item["source"]
             if source.get("type")=="base64":
@@ -73,11 +73,17 @@ class _ClaudeAPI(BaseProvider):
 class _AsyncClaudeAPI(BaseProvider):
     def __init__(self, api_key: str, retry_config=None):
         super().__init__(api_key, retry_config)
-        self.async_client = anthropic.AsyncAnthropic(api_key=api_key)
+        import httpx
+        self.async_client = anthropic.AsyncAnthropic(
+            api_key=api_key,
+            http_client=httpx.AsyncClient(
+                verify=False
+            )
+        )
 
     async def send_message_async(self, model: str, content: list, system: str, max_tokens: int, timeout: int, **kwargs):
         claude_content = _convert_to_claude_parts(content)
-        
+        print(f"--Using Claude model: {model}--")
         response = await self._execute_with_retry_async(
             self.async_client.messages.create,
             model=model,
