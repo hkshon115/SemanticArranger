@@ -1,18 +1,18 @@
 [
   {
-    "page_content": "# Hello Word\n\n---\n\n## Summary\nThis document contains a simple header 'Hello Word' and a quarterly financial table for 2024 showing Revenue and Profit figures across all four quarters. The financial data shows progressive growth in both revenue (from 300 to 600) and profit (from 100 to 160) throughout the year.\n\n---\n\n### 2024 Quarterly Financial Data\n2024 | Q1 | Q2 | Q3 | Q4\nRevenue | 300 | 400 | 500 | 600\nProfit | 100 | 120 | 140 | 160",
+    "page_content": "# Hello Word\n\n---\n\n## Summary\nThis document contains a simple header 'Hello Word' and a quarterly financial table for 2024 showing Revenue and Profit metrics across all four quarters. The financial data demonstrates consistent growth throughout the year, with Revenue increasing from 300 in Q1 to 600 in Q4, and Profit growing from 100 in Q1 to 160 in Q4.\n\n---\n\n### 2024 Quarterly Financial Data\n2024 | Q1 | Q2 | Q3 | Q4\nRevenue | 300 | 400 | 500 | 600\nProfit | 100 | 120 | 140 | 160",
     "metadata": {
       "page_number": 1,
       "page_title": "Hello Word",
-      "page_summary": "This document contains a simple header 'Hello Word' and a quarterly financial table for 2024 showing Revenue and Profit figures across all four quarters. The financial data shows progressive growth in both revenue (from 300 to 600) and profit (from 100 to 160) throughout the year.",
+      "page_summary": "This document contains a simple header 'Hello Word' and a quarterly financial table for 2024 showing Revenue and Profit metrics across all four quarters. The financial data demonstrates consistent growth throughout the year, with Revenue increasing from 300 in Q1 to 600 in Q4, and Profit growing from 100 in Q1 to 160 in Q4.",
       "page_complexity": "simple",
       "language": "en",
       "chunking_profile": "simple",
-      "chunked_at": "2025-11-08T08:01:57.323458",
+      "chunked_at": "2025-11-09T19:51:11.152066",
       "is_full_page": true,
       "chunk_index": 0,
       "total_chunks": 1,
-      "estimated_tokens": 119
+      "estimated_tokens": 130
     },
     "embedding_id": "bbdb123f6f1597e876b08aedcf804946"
   }

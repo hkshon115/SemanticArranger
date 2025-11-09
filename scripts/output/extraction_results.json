@@ -5,7 +5,7 @@
     "total_steps": 1,
     "successful_steps": 1,
     "main_title": "Hello Word",
-    "page_summary": "This document contains a simple header 'Hello Word' and a quarterly financial table for 2024 showing Revenue and Profit figures across all four quarters. The financial data shows progressive growth in both revenue (from 300 to 600) and profit (from 100 to 160) throughout the year.",
+    "page_summary": "This document contains a simple header 'Hello Word' and a quarterly financial table for 2024 showing Revenue and Profit metrics across all four quarters. The financial data demonstrates consistent growth throughout the year, with Revenue increasing from 300 in Q1 to 600 in Q4, and Profit growing from 100 in Q1 to 160 in Q4.",
     "key_sections": [
       {
         "section_title": "2024 Quarterly Financial Data",
@@ -19,14 +19,14 @@
       "page_number": 1,
       "router_warnings": [],
       "total_tokens_used": 0,
-      "total_time": 5.6331634521484375,
+      "total_time": 5.468836069107056,
       "extraction_details": [
         {
           "step": 1,
           "strategy": "basic",
           "success": true,
           "tokens_used": 0,
-          "time_elapsed": 5.6331634521484375,
+          "time_elapsed": 5.468836069107056,
           "error": null
         }
       ],
